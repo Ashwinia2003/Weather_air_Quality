@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Emission Trends Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #graph-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Carbon Emission Trends Visualization</h1>
+    <p>This graph shows the carbon emission trends over time.</p>
+    
+    <!-- Container for Plotly Graph -->
+    <div id="graph-container">
+        {{ plot_html | safe }}
+    </div>
+
+</body>
+</html>
+
